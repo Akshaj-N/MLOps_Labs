@@ -28,7 +28,7 @@ mlops_labs
     ├── assets/
     ├── fastapi_lab1_env/
     ├── model/
-    │   └── iris_model.pkl
+    │   └── wine_model.pkl
     ├── src/
     │   ├── __init__.py
     │   ├── data.py
@@ -44,13 +44,13 @@ Note:
 
 ## Running the Lab
 
-1. First step is to train a Random Forest Classifier(Although you have **`model/iris_model.pkl`** when you cloned from the repo, let's create a new model). To do this, move into **src/** folder with
+1. First step is to train a Random Forest Classifier(Although you have **`model/wine_model.pkl`** when you cloned from the repo, let's create a new model). To do this, move into **src/** folder with
     ```bash
     cd src
     ```
 2. To train the Decision Tree Classifier, run:
     ```bash
-    python train.py
+    python3 train.py
     ```
 3. To serve the trained model as an API, run:
     ```bash
