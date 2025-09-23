@@ -3,6 +3,7 @@
 - Used Wine dataset instead of Iris dataset.
 - Used Random Forest instead of DecisionTreeClassifier model.
 - Assets folder contains screenshots to evaluate the workflow of model training and API.
+- The results (screenshots) are attached below in this README.md file.
 
 ---
 - Video Explanation: [FastAPI lab](https://www.youtube.com/watch?v=KReburHqRIQ&list=PLcS4TrUUc53LeKBIyXAaERFKBJ3dvc9GZ&index=4)
