@@ -67,7 +67,10 @@ Note:
    
 You can also test out the results of your endpoints by interacting with them. Click on the dropdown button of your endpoint -> Try it out -> Fill the Request body -> Click on Execute button.
 
-![API response](assets/api_response.png)
+![API response](assets/test1.a.png)
+![API response](assets/test1.b.png)
+![API response](assets/test2.a.png)
+![API response](assets/test2.b.png)
 
 - You can also use other tools like [Postman](https://www.postman.com/) for API testing.
 
