@@ -11,10 +11,6 @@ env/
 ENV/
 fastapi_lab1_env/
 
-# Model files
-*.pkl
-model/
-
 # IDE
 .vscode/
 .idea/
