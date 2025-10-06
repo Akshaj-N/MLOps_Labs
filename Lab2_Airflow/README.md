@@ -3,7 +3,7 @@
 ## Submission Changes
 
 - Used Mall_Customers dataset instead of CC_General dataset.
-- Created an extra function visualize_clusters().
+- Created an additional function visualize_clusters().
 - Attached elbow_curve image (screebshot) below.
 - Attached cluster_plot image (screebshot) below.
 
@@ -24,6 +24,7 @@ Before using this script, make sure you have the following libraries installed:
 - scikit-learn (sklearn)
 - kneed
 - pickle
+- matplotlib
 
 #### Usage
 
@@ -73,6 +74,13 @@ print(result)
      ```python
      result = load_model_elbow('clustering_model.pkl', sse_values)
      ```
+5. **def visualize_clusters(filename)**
+   - *Description:* Fits a KMeans model with 5 clusters, then plots and saves clusters with their centroids as a PNG image.
+   - *Usage:*
+     ```python
+     result = visualize_clusters('clustering_model.pkl')
+     ```
+
 ### Airflow Setup
 
 Use Airflow to author workflows as directed acyclic graphs (DAGs) of tasks. The Airflow scheduler executes your tasks on an array of workers while following the specified dependencies.
@@ -134,14 +142,14 @@ Cloud
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
 
     # Additional python package
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas }
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas scikit-learn kneed matplotlib }
 
     # Output dir
     - ${AIRFLOW_PROJ_DIR:-.}/working_data:/opt/airflow/working_data
 
     # Change default admin credentials
-    _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow2}
-    _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow2}
+    _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-akshaj}
+    _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-akshaj}
     ```
 
     e. Initialize the database
@@ -158,7 +166,7 @@ Cloud
 
     Wait until terminal outputs
 
-    `app-airflow-webserver-1  | 127.0.0.1 - - [17/Feb/2023:09:34:29 +0000] "GET /health HTTP/1.1" 200 141 "-" "curl/7.74.0"`
+    `app-airflow-webserver-1  | 127.0.0.1 - - [6/Oct/2025:09:34:29 +0000] "GET /health HTTP/1.1" 200 141 "-" "curl/7.74.0"`
 
     g. Enable port forwarding
 
@@ -211,7 +219,7 @@ conf.set('core', 'enable_xcom_pickling', 'True')
 #### Define default arguments for your DAG
 ```python
 default_args = {
-    'owner': 'your_name',
+    'owner': 'akshaj',
     'start_date': datetime(2023, 9, 17),
     'retries': 0,  # Number of retries in case of task failure
     'retry_delay': timedelta(minutes=5),  # Delay before retries
@@ -219,10 +227,10 @@ default_args = {
 ```
 Default arguments for the DAG are specified in a dictionary named default_args. These arguments include the DAG owner's name, the start date, the number of retries, and the retry delay in case of task failure.
 
-#### Create a DAG instance named 'your_python_dag' with the defined default arguments
+#### Create a DAG instance named 'Airflow_Lab1' with the defined default arguments
 ``` python 
 dag = DAG(
-    'your_python_dag',
+    'Airflow_Lab1',
     default_args=default_args,
     description='Your Python DAG Description',
     schedule_interval=None,  # Set the schedule interval or use None for manual triggering
@@ -257,29 +265,47 @@ The 'data_preprocessing_task' depends on the 'load_data_task' and calls the data
 build_save_model_task = PythonOperator(
     task_id='build_save_model_task',
     python_callable=build_save_model,
-    op_args=[data_preprocessing_task.output, "model.sav"],
-    provide_context=True,
+    op_args=[data_preprocessing_task.output, "model2.sav"],
     dag=dag,
 )
 ```
-The 'build_save_model_task' depends on the 'data_preprocessing_task' and calls the build_save_model function. It also provides additional context information and arguments.
+The 'build_save_model_task' depends on the 'data_preprocessing_task' and calls the build_save_model function with the preprocessed data and saves the model as "model2.sav".
 
 #### Task to load a model using the 'load_model_elbow' function, depends on 'build_save_model_task'
 ``` python
 load_model_task = PythonOperator(
     task_id='load_model_task',
     python_callable=load_model_elbow,
-    op_args=["model.sav", build_save_model_task.output],
+    op_args=["model2.sav", build_save_model_task.output],
     dag=dag,
 )
 ```
-The 'load_model_task' depends on the 'build_save_model_task' and calls the load_model_elbow function with specific arguments.
+The 'load_model_task' depends on the 'build_save_model_task' and calls the load_model_elbow function to load the saved model and compute the elbow curve with SSE values.
+
+#### Task to visualize clusters, depends on 'build_save_model_task'
+``` python
+visualize_clusters_task = PythonOperator(
+    task_id='visualize_clusters_task',
+    python_callable=visualize_clusters,
+    op_args=["model2.sav"],
+    dag=dag,
+)
+```
+The 'visualize_clusters_task' depends on the 'build_save_model_task' and calls the visualize_clusters function to create visual representations of the K-means clustering results using the saved model.
+
+
+
+
+
+
+
 
 #### Set task dependencies
 ```python
 load_data_task >> data_preprocessing_task >> build_save_model_task >> load_model_task
+build_save_model_task >> visualize_clusters_task
 ```
-Task dependencies are defined using the >> operator. In this case, the tasks are executed in sequence: 'load_data_task' -> 'data_preprocessing_task' -> 'build_save_model_task' -> 'load_model_task'.
+Task dependencies are defined using the >> operator. The main pipeline executes in sequence: 'load_data_task' -> 'data_preprocessing_task' -> 'build_save_model_task' -> 'load_model_task'. Additionally, 'visualize_clusters_task' runs in parallel after 'build_save_model_task' completes, creating a branching workflow where both 'load_model_task' and 'visualize_clusters_task' can execute simultaneously once the model is saved.
 
 #### If this script is run directly, allow command-line interaction with the DAG
 ```python
@@ -323,7 +349,7 @@ docker compose up
 Wait until you see the log message indicating that the Airflow webserver is running:
 
 ```plaintext
-app-airflow-webserver-1 | 127.0.0.1 - - [17/Feb/2023:09:34:29 +0000] "GET /health HTTP/1.1" 200 141 "-" "curl/7.74.0"
+app-airflow-webserver-1 | 127.0.0.1 - - [6/Oct/2025:09:34:29 +0000] "GET /health HTTP/1.1" 200 141 "-" "curl/7.74.0"
 ```
 
 #### Step 4: Access Airflow Web Interface
