@@ -8,6 +8,10 @@
 ![Elbow_Curve page](dags/data/elbow_curve.png)
 - Attached cluster_plot image (screebshot) below.
 ![Cluster_plot](dags/data/cluster_plot.png)
+- Attached docker image (screebshot) below.
+![Cluster_plot](dags/data/docker_image.png)
+- Attached graph_view image (screebshot) below.
+![Cluster_plot](dags/data/graph_view.png)
 
 ---
 - In order to install Airflow using docker you can watch our [Airflow Lab1 Tutorial Video](https://youtu.be/exFSeGUbn4Q?feature=shared)
