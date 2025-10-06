@@ -1,7 +1,16 @@
 # Airflow lab
 
+## Submission Changes
+
+- Used Mall_Customers dataset instead of CC_General dataset.
+- Created an extra function visualize_clusters().
+- Attached elbow_curve image below.
+- Attached cluster_plot image below.
+
+---
 - In order to install Airflow using docker you can watch our [Airflow Lab1 Tutorial Video](https://youtu.be/exFSeGUbn4Q?feature=shared)
 - For latest step-by-step instructions, check out this blog - [AirFlow Lab-1](https://www.mlwithramin.com/blog/airflow-lab1)
+---
 
 ### ML Model
 
