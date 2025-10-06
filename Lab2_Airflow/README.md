@@ -4,14 +4,14 @@
 
 - Used Mall_Customers dataset instead of CC_General dataset.
 - Created an additional function visualize_clusters().
-- Attached elbow_curve image (screenshot) below.
-![Elbow_Curve page](dags/data/elbow_curve.png)
-- Attached cluster_plot image (screenshot) below.
-![Cluster_plot](dags/data/cluster_plot.png)
 - Attached docker image (screenshot) below.
 ![Cluster_plot](dags/data/docker_image.png)
 - Attached graph_view image (screenshot) below.
 ![Cluster_plot](dags/data/graph_view.png)
+- Attached elbow_curve image (screenshot) below.
+![Elbow_Curve page](dags/data/elbow_curve.png)
+- Attached cluster_plot image (screenshot) below.
+![Cluster_plot](dags/data/cluster_plot.png)
 
 ---
 - In order to install Airflow using docker you can watch our [Airflow Lab1 Tutorial Video](https://youtu.be/exFSeGUbn4Q?feature=shared)
