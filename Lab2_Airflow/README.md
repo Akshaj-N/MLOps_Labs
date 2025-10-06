@@ -8,6 +8,8 @@
 ![Cluster_plot](dags/data/docker_image.png)
 - Attached graph_view image (screenshot) below.
 ![Cluster_plot](dags/data/graph_view.png)
+- Attached grid_view image (screenshot) below.
+![Cluster_plot](dags/data/grid_view.png)
 - Attached elbow_curve image (screenshot) below.
 ![Elbow_Curve page](dags/data/elbow_curve.png)
 - Attached cluster_plot image (screenshot) below.
