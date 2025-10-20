@@ -1,0 +1,144 @@
+genre,title,rating,num_ratings
+Adventure,Lawrence of Arabia (1962),4.30,45
+Adventure,Monty Python and the Holy Grail (1975),4.16,136
+Adventure,Spirited Away (Sen to Chihiro no kamikakushi) (2001),4.16,87
+Adventure,"Bridge on the River Kwai, The (1957)",4.12,45
+Adventure,"Lord of the Rings: The Fellowship of the Ring, The (2001)",4.11,198
+Adventure,Toy Story 3 (2010),4.11,55
+Adventure,Wallace & Gromit: The Best of Aardman Animation (1996),4.09,27
+Adventure,"Grand Day Out with Wallace and Gromit, A (1989)",4.09,28
+Adventure,Howl's Moving Castle (Hauru no ugoku shiro) (2004),4.08,40
+Adventure,Fantastic Mr. Fox (2009),4.08,18
+Comedy,His Girl Friday (1940),4.39,14
+Comedy,It Happened One Night (1934),4.32,14
+Comedy,Living in Oblivion (1995),4.31,13
+Comedy,"Philadelphia Story, The (1940)",4.31,29
+Comedy,Louis C.K.: Live at the Beacon Theater (2011),4.30,10
+Comedy,Harold and Maude (1971),4.29,26
+Comedy,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964),4.27,97
+Comedy,Wild Tales (2014),4.25,10
+Comedy,Pulp Fiction (1994),4.20,307
+Comedy,Top Secret! (1984),4.20,10
+Action,All Quiet on the Western Front (1930),4.35,10
+Action,Once Upon a Time in the West (C'era una volta il West) (1968),4.31,18
+Action,Elite Squad (Tropa de Elite) (2007),4.30,10
+Action,Logan (2017),4.28,25
+Action,Fight Club (1999),4.27,218
+Action,"Outlaw Josey Wales, The (1976)",4.25,18
+Action,"Dark Knight, The (2008)",4.24,149
+Action,Star Wars: Episode IV - A New Hope (1977),4.23,251
+Action,"Princess Bride, The (1987)",4.23,142
+Action,Yojimbo (1961),4.23,13
+Drama,Secrets & Lies (1996),4.59,11
+Drama,Guess Who's Coming to Dinner (1967),4.55,11
+Drama,Paths of Glory (1957),4.54,12
+Drama,"Streetcar Named Desire, A (1951)",4.47,20
+Drama,"Celebration, The (Festen) (1998)",4.46,12
+Drama,Ran (1985),4.43,15
+Drama,Sunset Blvd. (a.k.a. Sunset Boulevard) (1950),4.33,27
+Drama,"Hustler, The (1961)",4.33,18
+Drama,In the Name of the Father (1993),4.30,25
+Drama,"Hunt, The (Jagten) (2012)",4.30,10
+Crime,"Shawshank Redemption, The (1994)",4.43,317
+Crime,Double Indemnity (1944),4.32,17
+Crime,"Godfather, The (1972)",4.29,192
+Crime,"Godfather: Part II, The (1974)",4.26,129
+Crime,Touch of Evil (1958),4.26,17
+Crime,Goodfellas (1990),4.25,126
+Crime,"Manchurian Candidate, The (1962)",4.25,30
+Crime,"Departed, The (2006)",4.25,107
+Crime,"Usual Suspects, The (1995)",4.24,204
+Crime,To Catch a Thief (1955),4.22,23
+Mystery,Rear Window (1954),4.26,84
+Mystery,Memento (2000),4.12,159
+Mystery,Old Boy (2003),4.09,39
+Mystery,Twelve Monkeys (a.k.a. 12 Monkeys) (1995),3.98,177
+Mystery,Seven (a.k.a. Se7en) (1995),3.98,203
+Mystery,District 9 (2009),3.78,65
+Mystery,Dead Again (1991),3.77,13
+Mystery,"Maltese Falcon, The (a.k.a. Dangerous Female) (1931)",3.62,17
+Mystery,Super 8 (2011),3.60,21
+Mystery,Just Cause (1995),3.50,14
+Children,It's a Wonderful Life (1946),4.03,58
+Children,"Christmas Story, A (1983)",3.97,55
+Children,"Little Princess, A (1995)",3.90,21
+Children,Mary Poppins (1964),3.89,71
+Children,Willy Wonka & the Chocolate Factory (1971),3.87,119
+Children,E.T. the Extra-Terrestrial (1982),3.77,122
+Children,"Secret of Roan Inish, The (1994)",3.75,16
+Children,Hugo (2011),3.75,18
+Children,"Muppet Christmas Carol, The (1992)",3.74,19
+Children,Elf (2003),3.69,39
+Animation,Creature Comforts (1989),4.25,12
+Animation,Mary and Max (2009),4.20,10
+Animation,Persepolis (2007),4.18,11
+Animation,Grave of the Fireflies (Hotaru no haka) (1988),4.16,16
+Animation,Ghost in the Shell (Kôkaku kidôtai) (1995),4.15,27
+Animation,Batman: Mask of the Phantasm (1993),4.12,13
+Animation,"Girl Who Leapt Through Time, The (Toki o kakeru shôjo) (2006)",4.10,10
+Animation,Wallace & Gromit: The Wrong Trousers (1993),4.04,56
+Animation,Metropolis (2001),3.96,13
+Animation,My Neighbor Totoro (Tonari no Totoro) (1988),3.96,37
+Documentary,"Fog of War: Eleven Lessons from the Life of Robert S. McNamara, The (2003)",4.31,13
+Documentary,Hoop Dreams (1994),4.29,29
+Documentary,Inside Job (2010),4.29,12
+Documentary,Crumb (1994),4.21,17
+Documentary,"Thin Blue Line, The (1988)",4.00,11
+Documentary,Spellbound (2002),3.92,13
+Documentary,"King of Kong, The (2007)",3.92,12
+Documentary,When We Were Kings (1996),3.90,10
+Documentary,"Corporation, The (2003)",3.90,10
+Documentary,Koyaanisqatsi (a.k.a. Koyaanisqatsi: Life Out of Balance) (1983),3.86,11
+Fantasy,Brazil (1985),4.18,59
+Fantasy,"Evil Dead, The (1981)",3.82,22
+Fantasy,Fantastic Beasts and Where to Find Them (2016),3.68,14
+Fantasy,Sleepy Hollow (1999),3.48,62
+Fantasy,Dracula (Bram Stoker's Dracula) (1992),3.47,29
+Fantasy,"Prophecy, The (1995)",3.46,12
+Fantasy,"Ninth Gate, The (1999)",3.20,15
+Fantasy,Silent Hill (2006),2.96,12
+Fantasy,"Twilight Saga: Eclipse, The (2010)",2.45,10
+Fantasy,Queen of the Damned (2002),2.36,11
+Horror,"Shining, The (1980)",4.08,109
+Horror,Alien (1979),3.97,146
+Horror,"Omen, The (1976)",3.82,22
+Horror,"Exorcist, The (1973)",3.80,53
+Horror,Invasion of the Body Snatchers (1956),3.77,13
+Horror,Night of the Living Dead (1968),3.75,28
+Horror,Halloween (1978),3.72,27
+Horror,Get Out (2017),3.63,15
+Horror,"Birds, The (1963)",3.60,44
+Horror,28 Weeks Later (2007),3.60,21
+Thriller,Spotlight (2015),4.16,19
+Thriller,"Fugitive, The (1993)",3.99,190
+Thriller,Cape Fear (1991),3.78,25
+Thriller,"Dead Zone, The (1983)",3.73,15
+Thriller,10 Cloverfield Lane (2016),3.68,14
+Thriller,Sleepers (1996),3.67,29
+Thriller,Red Rock West (1992),3.64,11
+Thriller,"Perfect Murder, A (1998)",3.28,16
+Thriller,Arlington Road (1999),3.27,22
+Thriller,Dead Calm (1989),3.17,12
+Western,High Plains Drifter (1973),4.18,11
+Western,Little Big Man (1970),4.15,24
+Western,True Grit (2010),3.75,28
+Western,The Hateful Eight (2015),3.75,18
+Western,Wyatt Earp (1994),3.10,21
+Sci-Fi,Interstellar (2014),3.99,73
+Sci-Fi,Arrival (2016),3.98,26
+Sci-Fi,Limitless (2011),3.95,30
+Sci-Fi,Blade Runner 2049 (2017),3.81,18
+Sci-Fi,Contagion (2011),3.71,12
+Sci-Fi,2010: The Year We Make Contact (1984),3.59,17
+Sci-Fi,Dawn of the Planet of the Apes (2014),3.43,15
+Sci-Fi,Sphere (1998),2.76,23
+Sci-Fi,"Island of Dr. Moreau, The (1996)",2.74,27
+Sci-Fi,Mission to Mars (2000),2.69,21
+Musical,Meet Me in St. Louis (1944),4.10,10
+Musical,"Sound of Music, The (1965)",3.94,64
+Musical,"American in Paris, An (1951)",3.71,12
+Film-Noir,Notorious (1946),4.25,20
+Film-Noir,"Third Man, The (1949)",4.23,24
+Film-Noir,"Maltese Falcon, The (1941)",4.17,44
+Romance,"Adjustment Bureau, The (2011)",3.17,21
+Romance,Meet Joe Black (1998),3.05,20
