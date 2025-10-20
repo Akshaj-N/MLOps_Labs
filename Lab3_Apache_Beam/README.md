@@ -37,9 +37,12 @@ movielens-beam-pipeline/
 │   └── popularity_analysis-00000-of-00001.csv
 │
 ├── screenshots/                       # Documentation screenshots
-    ├── pipeline_execution.png
-    ├── output_preview.png
-    └── analysis_results.png
+    ├── genre_avg_rating.png
+    ├── top10_movies_by_genre.png
+    ├── decade_statistics.png
+    ├── rating_distribution.png
+    └── popularity_analysis.png
+     
 
 ```
 
@@ -145,10 +148,5 @@ The pipeline generates 5 analytical CSV files:
 **Purpose**: Compares popular vs niche movies
 
 ![Pipeline Execution](screenshots/pipeline_execution.png)
-
-**Categories**:
-- **Popular**: ≥100 ratings
-- **Moderate**: 50-99 ratings
-- **Niche**: 10-49 ratings
 
 **Use Case**: Analyze relationship between popularity and quality
