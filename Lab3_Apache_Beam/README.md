@@ -102,8 +102,6 @@ rm -rf ml-latest-small ml-small.zip
 ```bash
 jupyter notebook movie_pipeline.ipynb
 ```
-
-
 ## Pipeline Outputs
 
 The pipeline generates 5 analytical CSV files:
@@ -111,7 +109,7 @@ The pipeline generates 5 analytical CSV files:
 ### 1. Genre Average Rating (`genre_avg_rating-00000-of-00001.csv`)
 **Purpose**: Shows average rating for each genre
 
-![Pipeline Execution](screenshots/pipeline_execution.png)
+![genre_avg_rating](screenshots/genre_avg_rating.png)
 
 **Use Case**: Identify which genres receive highest ratings
 
@@ -120,7 +118,7 @@ The pipeline generates 5 analytical CSV files:
 ### 2. Top-N Movies by Genre (`top10_movies_by_genre-00000-of-00001.csv`)
 **Purpose**: Lists top-rated movies in each genre
 
-![Pipeline Execution](screenshots/pipeline_execution.png)
+![top10_movies_by_genre](screenshots/top10_movies_by_genre.png)
 
 **Use Case**: Discover best movies per genre, filter by minimum ratings
 
@@ -129,7 +127,7 @@ The pipeline generates 5 analytical CSV files:
 ### 3. Decade Statistics (`decade_statistics-00000-of-00001.csv`)
 **Purpose**: Movie production and rating trends by decade
 
-![Pipeline Execution](screenshots/pipeline_execution.png)
+![decade_statistics](screenshots/decade_statistics.png)
 
 **Use Case**: Analyze historical trends in movie production and quality
 
@@ -138,7 +136,7 @@ The pipeline generates 5 analytical CSV files:
 ### 4. Rating Distribution (`rating_distribution-00000-of-00001.csv`)
 **Purpose**: Distribution of movies across rating buckets
 
-![Pipeline Execution](screenshots/pipeline_execution.png)
+![rating_distribution](screenshots/rating_distribution.png)
 
 **Use Case**: Understand rating distribution and identify outliers
 
@@ -147,6 +145,6 @@ The pipeline generates 5 analytical CSV files:
 ### 5. Popularity Analysis (`popularity_analysis-00000-of-00001.csv`)
 **Purpose**: Compares popular vs niche movies
 
-![Pipeline Execution](screenshots/pipeline_execution.png)
+![popularity_analysis](screenshots/popularity_analysis.png)
 
 **Use Case**: Analyze relationship between popularity and quality
