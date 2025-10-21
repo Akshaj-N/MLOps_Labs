@@ -42,8 +42,6 @@ movielens-beam-pipeline/
     ├── decade_statistics.png
     ├── rating_distribution.png
     └── popularity_analysis.png
-     
-
 ```
 
 ### Key Files:
