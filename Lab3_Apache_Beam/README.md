@@ -68,8 +68,8 @@ numpy==1.24.0
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/movielens-beam-pipeline.git
-cd movielens-beam-pipeline
+git clone https://github.com/Akshaj-N/MLOps_Labs.git
+cd Lab3_Apache_Beam
 ```
 
 ### Step 2: Create Virtual Environment
