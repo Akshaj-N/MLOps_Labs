@@ -110,3 +110,28 @@ response = requests.post(url, json=sample_data)
 print(response.json())
 ```
 
+## Submission
+
+### 1. Model Registry in MLflow
+
+![mlflow_model_registry](assets/mlflow_model_registry.png)
+
+### 2. 5 models in MLflow 
+
+![mlflow_models](assets/mlflow_models.png)
+
+### 3. MLflow metric tracking for Logistic Regression 
+
+![mlflow_tracking_LR](assets/mlflow_tracking_LR.png)
+
+### 4. Serving the model for real-time inference
+
+![model_serving_api](assets/model_serving_api.png)
+
+### 5. Real-Time Inference with the Deployed model
+
+![real_time_inference](assets/real_time_inference.png)
+
+### 6. Confusion Matrix for the best model
+
+![confusion_matrix_best_model](assets/confusion_matrix_best_model.png)
