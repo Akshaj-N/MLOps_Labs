@@ -161,17 +161,18 @@ Where:
 ## Visualizations
 
 ### 1. Training Curves
-![Training Curves](results/training_curves.png)
+![Training Curves](training_curves.png)
 - Compares training and validation accuracy across all models
 - Shows distilled student's improved generalization
 
 ### 2. Confusion Matrices
-![Confusion Matrices](results/confusion_matrices.png)
+![Confusion Matrices](confusion_matrices.png)
 - Visualizes prediction patterns for each model
 - Reveals which classes are commonly confused
 
 ### 3. Per-Class Accuracy
-![Per-Class Accuracy](results/per_class_accuracy.png)
+![Per-Class Accuracy](per_class_accuracy.png)
 - Breakdown of performance by class
 - Identifies where distillation helps most
+
 
