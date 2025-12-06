@@ -61,12 +61,7 @@ git clone https://github.com/Akshaj-N/MLOps_Labs.git
 cd Lab6_Knowledge_Distillation
 ```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the Jupyter notebook:
+2. Run the Jupyter notebook:
 ```bash
 jupyter notebook knowledge_distillation.ipynb
 ```
@@ -79,8 +74,7 @@ knowledge-distillation-cifar10/
 ├── teacher_model.h5                # Trained teacher model
 ├── student_distilled.h5           # Distilled student model
 ├── student_scratch.h5             # Student trained from scratch
-├── README.md                      # This file
-└── requirements.txt               # Python dependencies
+└── README.md                      # This file
 ```
 
 ## Usage
@@ -174,5 +168,6 @@ Where:
 ![Per-Class Accuracy](per_class_accuracy.png)
 - Breakdown of performance by class
 - Identifies where distillation helps most
+
 
 
