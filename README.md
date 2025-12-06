@@ -9,3 +9,4 @@ This repository contains all the lab assignments from IE 7374 MLOps course.
 - Lab 3: Apache Beam Python
 - Lab 4: MLflow
 - Lab 5: Model development with Ray
+- Lab 6: Knowledge Distillation
